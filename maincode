@@ -1,0 +1,359 @@
+--[=[
+ d888b  db    db d888888b      .d888b.      db      db    db  .d8b.  
+88' Y8b 88    88   `88'        VP  `8D      88      88    88 d8' `8b 
+88      88    88    88            odD'      88      88    88 88ooo88 
+88  ooo 88    88    88          .88'        88      88    88 88~~~88 
+88. ~8~ 88b  d88   .88.        j88.         88booo. 88b  d88 88   88    @uniquadev
+ Y888P  ~Y8888P' Y888888P      888888D      Y88888P ~Y8888P' YP   YP  CONVERTER 
+]=]
+
+-- Instances: 18 | Scripts: 4 | Modules: 0 | Tags: 0
+local G2L = {};
+
+-- StarterGui.VodlingGui
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[VodlingGui]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(66, 23, 131);
+G2L["2"]["Size"] = UDim2.new(0, 360, 0, 280);
+G2L["2"]["Position"] = UDim2.new(0.42945, 0, 0.30846, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[VoidlingMainFrame]];
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame
+G2L["3"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["3"]["Active"] = true;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(86, 86, 255);
+G2L["3"]["Size"] = UDim2.new(0, 214, 0, 280);
+G2L["3"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Position"] = UDim2.new(0.72222, 0, 0, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.Bring
+G2L["4"] = Instance.new("TextButton", G2L["3"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[Bring]];
+G2L["4"]["Name"] = [[Bring]];
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.Bring.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+G2L["5"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.Bring.LocalScript
+G2L["6"] = Instance.new("LocalScript", G2L["4"]);
+
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.UICorner
+G2L["7"] = Instance.new("UICorner", G2L["3"]);
+G2L["7"]["CornerRadius"] = UDim.new(0, 12);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.UICorner
+G2L["8"] = Instance.new("UICorner", G2L["2"]);
+G2L["8"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.TextLabel
+G2L["9"] = Instance.new("TextLabel", G2L["2"]);
+G2L["9"]["BorderSizePixel"] = 0;
+G2L["9"]["TextSize"] = 14;
+G2L["9"]["BackgroundColor3"] = Color3.fromRGB(70, 8, 145);
+G2L["9"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["9"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Size"] = UDim2.new(0, 260, 0, 37);
+G2L["9"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["9"]["Text"] = [[VoidLing]];
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.TextLabel.UICorner
+G2L["a"] = Instance.new("UICorner", G2L["9"]);
+G2L["a"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Fuel
+G2L["b"] = Instance.new("TextButton", G2L["2"]);
+G2L["b"]["BorderSizePixel"] = 0;
+G2L["b"]["TextSize"] = 14;
+G2L["b"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["BackgroundColor3"] = Color3.fromRGB(171, 0, 0);
+G2L["b"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["b"]["Size"] = UDim2.new(0, 200, 0, 44);
+G2L["b"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["b"]["Text"] = [[Fuel]];
+G2L["b"]["Name"] = [[Bring Fuel]];
+G2L["b"]["Visible"] = false;
+G2L["b"]["Position"] = UDim2.new(0.03889, 0, 0.17857, 0);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Fuel.UICorner
+G2L["c"] = Instance.new("UICorner", G2L["b"]);
+G2L["c"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Fuel.BringScript
+G2L["d"] = Instance.new("LocalScript", G2L["b"]);
+G2L["d"]["Name"] = [[BringScript]];
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.LocalScript
+G2L["e"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Info
+G2L["f"] = Instance.new("TextLabel", G2L["2"]);
+G2L["f"]["TextWrapped"] = true;
+G2L["f"]["BorderSizePixel"] = 0;
+G2L["f"]["TextSize"] = 14;
+G2L["f"]["TextScaled"] = true;
+G2L["f"]["BackgroundColor3"] = Color3.fromRGB(169, 93, 255);
+G2L["f"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["f"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Size"] = UDim2.new(0, 241, 0, 213);
+G2L["f"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["f"]["Text"] = [[Info: This is script for 99 nights in the forest  this is version 1.0 from now on i will update this scrippt.]];
+G2L["f"]["Name"] = [[Info]];
+G2L["f"]["Position"] = UDim2.new(0.01667, 0, 0.17857, 0);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Coal
+G2L["10"] = Instance.new("TextButton", G2L["2"]);
+G2L["10"]["BorderSizePixel"] = 0;
+G2L["10"]["TextSize"] = 14;
+G2L["10"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["BackgroundColor3"] = Color3.fromRGB(114, 114, 114);
+G2L["10"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["10"]["Size"] = UDim2.new(0, 200, 0, 44);
+G2L["10"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["10"]["Text"] = [[Coal]];
+G2L["10"]["Name"] = [[Bring Coal]];
+G2L["10"]["Visible"] = false;
+G2L["10"]["Position"] = UDim2.new(0.03889, 0, 0.39643, 0);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Coal.UICorner
+G2L["11"] = Instance.new("UICorner", G2L["10"]);
+G2L["11"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Coal.BringScript
+G2L["12"] = Instance.new("LocalScript", G2L["10"]);
+G2L["12"]["Name"] = [[BringScript]];
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.Bring.LocalScript
+local function C_6()
+local script = G2L["6"];
+	local bringButton = script.Parent
+	
+	-- Path: BringButton -> ScrollingFrame -> Frame
+	local mainFrame = bringButton.Parent.Parent
+	
+	-- Path: Frame -> ScreenGui (The root of the UI)
+	local voidlingGui = mainFrame.Parent
+	
+	-- Access the VoidlingMainFrame and the Info text
+	local voidlingMainFrame = voidlingGui:WaitForChild("VoidlingMainFrame")
+	local textToHide = voidlingMainFrame:WaitForChild("Info")
+	
+	-- Reference the buttons you want to show
+	local bringFuelButton = mainFrame:WaitForChild("Bring Fuel")
+	local bringCoalButton = mainFrame:WaitForChild("Bring Coal")
+	
+	bringButton.MouseButton1Click:Connect(function()
+		-- 1. Show the Fuel button
+		bringFuelButton.Visible = true
+	
+		-- 2. Show the Coal button
+		bringCoalButton.Visible = true
+	
+		-- 3. Hide the Info text
+		textToHide.Visible = false
+	end)
+end;
+task.spawn(C_6);
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Fuel.BringScript
+local function C_d()
+local script = G2L["d"];
+	-- Get references to the button and player
+	local button = script.Parent 
+	local player = game.Players.LocalPlayer
+	
+	-- Function to handle the button click
+	local function onButtonClicked()
+		-- 1. Safety Check: Make sure the player character and root part exist
+		local character = player.Character
+		if not character or not character:FindFirstChild("HumanoidRootPart") then
+			warn("Character or HumanoidRootPart not found.")
+			return 
+		end
+	
+		local rootPart = character.HumanoidRootPart
+		local targetPosition = rootPart.CFrame + Vector3.new(0, 5, 0) -- 5 studs above player
+	
+		local fuelParts = {}
+	
+		-- 2. Search the workspace for objects named "Fuel"
+		for _, item in pairs(workspace:GetDescendants()) do
+			if item.Name == "Fuel" then
+				table.insert(fuelParts, item)
+			end
+		end
+	
+		-- 3. Move the parts if found
+		if #fuelParts > 0 then
+			for _, fuel in pairs(fuelParts) do
+				if fuel:IsA("Model") then
+					-- PivotTo works even if the model has no PrimaryPart set
+					fuel:PivotTo(targetPosition)
+				elseif fuel:IsA("BasePart") then
+					-- Move single parts
+					fuel.CFrame = targetPosition
+				end
+			end
+	
+			-- Success Notification
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "Fuel Moved",
+				Text = "Moved " .. #fuelParts .. " Fuel part(s) to your location!",
+				Duration = 5
+			})
+			print("Success: Moved " .. #fuelParts .. " fuel parts.")
+		else
+			-- Failure Notification
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "No Fuel Found",
+				Text = "No Fuel parts were found in the workspace.",
+				Duration = 5
+			})
+			print("Wait: No Fuel items found in workspace.")
+		end
+	end
+	
+	-- Connect the button click
+	button.MouseButton1Click:Connect(onButtonClicked)
+end;
+task.spawn(C_d);
+-- StarterGui.VodlingGui.VoidlingMainFrame.LocalScript
+local function C_e()
+local script = G2L["e"];
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		-- Updates the position based on the delta (change) in mouse movement
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			-- Observe changes to the input (mouse moving)
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end;
+task.spawn(C_e);
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Coal.BringScript
+local function C_12()
+local script = G2L["12"];
+	-- Get references to the button and player
+	local button = script.Parent 
+	local player = game.Players.LocalPlayer
+	
+	-- Function to handle the button click
+	local function onButtonClicked()
+		-- Ensure the player's character exists
+		local character = player.Character
+		if not character or not character:FindFirstChild("HumanoidRootPart") then
+			return 
+		end
+	
+		local targetPos = character.HumanoidRootPart.CFrame + Vector3.new(0, 5, 0)
+		local coalParts = {}
+	
+		-- Search entire workspace for objects named "Coal"
+		for _, item in pairs(workspace:GetDescendants()) do
+			if item.Name == "Coal" then
+				table.insert(coalParts, item)
+			end
+		end
+	
+		-- If any "Coal" parts are found, bring them to the player
+		if #coalParts > 0 then
+			for _, coal in pairs(coalParts) do
+				if coal:IsA("Model") then
+					-- If it's a model, move it using PivotTo (modern version of SetPrimaryPartCFrame)
+					coal:PivotTo(targetPos)
+				elseif coal:IsA("BasePart") then
+					-- If it's a single part, move its CFrame
+					coal.CFrame = targetPos
+				end
+			end
+	
+			-- Notification
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "Coal Moved",
+				Text = "Moved " .. #coalParts .. " Coal part(s) to your location!",
+				Duration = 5
+			})
+		else
+			-- Notification if none found
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "No Coal Found",
+				Text = "No Coal parts were found in the workspace.",
+				Duration = 5
+			})
+		end
+	end
+	
+	-- Connect the button click
+	button.MouseButton1Click:Connect(onButtonClicked)
+	
+end;
+task.spawn(C_12);
+
+return G2L["1"], require;
