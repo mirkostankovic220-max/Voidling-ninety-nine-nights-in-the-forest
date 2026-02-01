@@ -1,0 +1,577 @@
+G2L["1"] = Instance.new("ScreenGui", game:GetService("Players").LocalPlayer:WaitForChild("PlayerGui"));
+G2L["1"]["Name"] = [[VodlingGui]];
+G2L["1"]["ZIndexBehavior"] = Enum.ZIndexBehavior.Sibling;
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame
+G2L["2"] = Instance.new("Frame", G2L["1"]);
+G2L["2"]["BorderSizePixel"] = 0;
+G2L["2"]["BackgroundColor3"] = Color3.fromRGB(66, 23, 131);
+G2L["2"]["Size"] = UDim2.new(0, 360, 0, 280);
+G2L["2"]["Position"] = UDim2.new(0.42945, 0, 0.30846, 0);
+G2L["2"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["2"]["Name"] = [[VoidlingMainFrame]];
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame
+G2L["3"] = Instance.new("ScrollingFrame", G2L["2"]);
+G2L["3"]["Active"] = true;
+G2L["3"]["BorderSizePixel"] = 0;
+G2L["3"]["BackgroundColor3"] = Color3.fromRGB(86, 86, 255);
+G2L["3"]["Size"] = UDim2.new(0, 214, 0, 280);
+G2L["3"]["ScrollBarImageColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["3"]["Position"] = UDim2.new(0.72222, 0, 0, 0);
+G2L["3"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.Bring Fuel 1
+G2L["4"] = Instance.new("TextButton", G2L["3"]);
+G2L["4"]["BorderSizePixel"] = 0;
+G2L["4"]["TextSize"] = 14;
+G2L["4"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["4"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["4"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["4"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["4"]["Text"] = [[Bring Fuel]];
+G2L["4"]["Name"] = [[Bring Fuel 1]];
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.Bring Fuel 1.UICorner
+G2L["5"] = Instance.new("UICorner", G2L["4"]);
+G2L["5"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.Bring Fuel 1.ShowButtons
+G2L["6"] = Instance.new("LocalScript", G2L["4"]);
+G2L["6"]["Name"] = [[ShowButtons]];
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.UICorner
+G2L["7"] = Instance.new("UICorner", G2L["3"]);
+G2L["7"]["CornerRadius"] = UDim.new(0, 12);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.Bring Scrap
+G2L["8"] = Instance.new("TextButton", G2L["3"]);
+G2L["8"]["BorderSizePixel"] = 0;
+G2L["8"]["TextSize"] = 14;
+G2L["8"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["BackgroundColor3"] = Color3.fromRGB(255, 255, 255);
+G2L["8"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["8"]["Size"] = UDim2.new(0, 200, 0, 50);
+G2L["8"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["8"]["Text"] = [[Bring scrap]];
+G2L["8"]["Name"] = [[Bring Scrap]];
+G2L["8"]["Position"] = UDim2.new(0, 0, 0.12679, 0);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.Bring Scrap.UICorner
+G2L["9"] = Instance.new("UICorner", G2L["8"]);
+G2L["9"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.Bring Scrap.ShowButtons
+G2L["a"] = Instance.new("LocalScript", G2L["8"]);
+G2L["a"]["Name"] = [[ShowButtons]];
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.UICorner
+G2L["b"] = Instance.new("UICorner", G2L["2"]);
+G2L["b"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.NameScript
+G2L["c"] = Instance.new("TextLabel", G2L["2"]);
+G2L["c"]["BorderSizePixel"] = 0;
+G2L["c"]["TextSize"] = 14;
+G2L["c"]["BackgroundColor3"] = Color3.fromRGB(70, 8, 145);
+G2L["c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Size"] = UDim2.new(0, 260, 0, 37);
+G2L["c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["c"]["Text"] = [[VoidLing]];
+G2L["c"]["Name"] = [[NameScript]];
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.NameScript.UICorner
+G2L["d"] = Instance.new("UICorner", G2L["c"]);
+G2L["d"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Fuel
+G2L["e"] = Instance.new("TextButton", G2L["2"]);
+G2L["e"]["BorderSizePixel"] = 0;
+G2L["e"]["TextSize"] = 14;
+G2L["e"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["BackgroundColor3"] = Color3.fromRGB(171, 0, 0);
+G2L["e"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["e"]["Size"] = UDim2.new(0, 200, 0, 44);
+G2L["e"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["e"]["Text"] = [[Fuel]];
+G2L["e"]["Name"] = [[Bring Fuel]];
+G2L["e"]["Visible"] = false;
+G2L["e"]["Position"] = UDim2.new(0.05833, 0, 0.37143, 0);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Fuel.UICorner
+G2L["f"] = Instance.new("UICorner", G2L["e"]);
+G2L["f"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Fuel.BringScript
+G2L["10"] = Instance.new("LocalScript", G2L["e"]);
+G2L["10"]["Name"] = [[BringScript]];
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.LocalScript
+G2L["11"] = Instance.new("LocalScript", G2L["2"]);
+
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Coal
+G2L["12"] = Instance.new("TextButton", G2L["2"]);
+G2L["12"]["BorderSizePixel"] = 0;
+G2L["12"]["TextSize"] = 14;
+G2L["12"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["BackgroundColor3"] = Color3.fromRGB(114, 114, 114);
+G2L["12"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["12"]["Size"] = UDim2.new(0, 200, 0, 44);
+G2L["12"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["12"]["Text"] = [[Coal]];
+G2L["12"]["Name"] = [[Bring Coal]];
+G2L["12"]["Visible"] = false;
+G2L["12"]["Position"] = UDim2.new(0.05833, 0, 0.64286, 0);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Coal.UICorner
+G2L["13"] = Instance.new("UICorner", G2L["12"]);
+G2L["13"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Coal.BringScript
+G2L["14"] = Instance.new("LocalScript", G2L["12"]);
+G2L["14"]["Name"] = [[BringScript]];
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Type of Bring:Fuel
+G2L["15"] = Instance.new("TextLabel", G2L["2"]);
+G2L["15"]["BorderSizePixel"] = 0;
+G2L["15"]["TextSize"] = 14;
+G2L["15"]["BackgroundColor3"] = Color3.fromRGB(0, 145, 92);
+G2L["15"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["15"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Size"] = UDim2.new(0, 260, 0, 37);
+G2L["15"]["Visible"] = false;
+G2L["15"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["15"]["Text"] = [[Fuel]];
+G2L["15"]["Name"] = [[Type of Bring:Fuel]];
+G2L["15"]["Position"] = UDim2.new(0, 0, 0.16071, 0);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Type of Bring:Fuel.UICorner
+G2L["16"] = Instance.new("UICorner", G2L["15"]);
+G2L["16"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring All Scraps
+G2L["17"] = Instance.new("TextButton", G2L["2"]);
+G2L["17"]["BorderSizePixel"] = 0;
+G2L["17"]["TextSize"] = 14;
+G2L["17"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["BackgroundColor3"] = Color3.fromRGB(132, 132, 132);
+G2L["17"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["17"]["Size"] = UDim2.new(0, 200, 0, 44);
+G2L["17"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["17"]["Text"] = [[Bring All Scrap]];
+G2L["17"]["Name"] = [[Bring All Scraps]];
+G2L["17"]["Visible"] = false;
+G2L["17"]["Position"] = UDim2.new(0.07222, 0, 0.36071, 0);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring All Scraps.UICorner
+G2L["18"] = Instance.new("UICorner", G2L["17"]);
+G2L["18"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring All Scraps.BringScript
+G2L["19"] = Instance.new("LocalScript", G2L["17"]);
+G2L["19"]["Name"] = [[BringScript]];
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Type of Scrap
+G2L["1a"] = Instance.new("TextLabel", G2L["2"]);
+G2L["1a"]["BorderSizePixel"] = 0;
+G2L["1a"]["TextSize"] = 14;
+G2L["1a"]["BackgroundColor3"] = Color3.fromRGB(145, 145, 145);
+G2L["1a"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1a"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Size"] = UDim2.new(0, 260, 0, 37);
+G2L["1a"]["Visible"] = false;
+G2L["1a"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1a"]["Text"] = [[Scrap]];
+G2L["1a"]["Name"] = [[Bring Type of Scrap]];
+G2L["1a"]["Position"] = UDim2.new(0, 0, 0.16071, 0);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Type of Scrap.UICorner
+G2L["1b"] = Instance.new("UICorner", G2L["1a"]);
+G2L["1b"]["CornerRadius"] = UDim.new(0, 25);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.Info
+G2L["1c"] = Instance.new("TextLabel", G2L["2"]);
+G2L["1c"]["TextWrapped"] = true;
+G2L["1c"]["BorderSizePixel"] = 0;
+G2L["1c"]["TextSize"] = 14;
+G2L["1c"]["TextScaled"] = true;
+G2L["1c"]["BackgroundColor3"] = Color3.fromRGB(169, 93, 255);
+G2L["1c"]["FontFace"] = Font.new([[rbxasset://fonts/families/SourceSansPro.json]], Enum.FontWeight.Regular, Enum.FontStyle.Normal);
+G2L["1c"]["TextColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Size"] = UDim2.new(0, 241, 0, 213);
+G2L["1c"]["BorderColor3"] = Color3.fromRGB(0, 0, 0);
+G2L["1c"]["Text"] = [[Update 1.2 addedd An a Bring Scrap Button and added text that would tell what are yiu bringing (what type)]];
+G2L["1c"]["Name"] = [[Info]];
+G2L["1c"]["Position"] = UDim2.new(0.01667, 0, 0.17857, 0);
+
+
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.Bring Fuel 1.ShowButtons
+local function C_6()
+local script = G2L["6"];
+	local bringButton = script.Parent
+	
+	-- Path: BringButton -> ScrollingFrame -> Frame
+	local mainFrame = bringButton.Parent.Parent
+	
+	-- Path: Frame -> ScreenGui (The root of the UI)
+	local voidlingGui = mainFrame.Parent
+	
+	-- Access the VoidlingMainFrame and the labels
+	local voidlingMainFrame = voidlingGui:WaitForChild("VoidlingMainFrame")
+	local textToHide = voidlingMainFrame:WaitForChild("Info")
+	local textToShow = voidlingMainFrame:WaitForChild("Type of Bring:Fuel") -- The text you want to show
+	local textTypeScrap = voidlingMainFrame:WaitForChild("Bring Type of Scrap") -- The text you want to hide
+	
+	-- Reference the buttons
+	local bringFuelButton = mainFrame:WaitForChild("Bring Fuel")
+	local bringCoalButton = mainFrame:WaitForChild("Bring Coal")
+	local bringAllScrapsButton = mainFrame:WaitForChild("Bring All Scraps")
+	
+	bringButton.MouseButton1Click:Connect(function()
+		-- Check if "Bring All Scraps" is currently visible
+		if bringAllScrapsButton.Visible == true or textTypeScrap.Visible == true then
+	
+			-- 1. Hide the "Bring All Scraps" layout items
+			bringAllScrapsButton.Visible = false
+			textTypeScrap.Visible = false
+			textToHide.Visible = false -- Make sure original info is hidden
+	
+			-- 2. Show the "Fuel/Coal" layout items
+			bringFuelButton.Visible = true
+			bringCoalButton.Visible = true
+			textToShow.Visible = true
+	
+		else
+			-- If it wasn't visible, just ensure the Fuel/Coal layout shows up anyway
+			bringFuelButton.Visible = true
+			bringCoalButton.Visible = true
+			textToShow.Visible = true
+	
+			-- Ensure the others stay hidden
+			bringAllScrapsButton.Visible = false
+			textTypeScrap.Visible = false
+			textToHide.Visible = false
+		end
+	end)
+end;
+task.spawn(C_6);
+-- StarterGui.VodlingGui.VoidlingMainFrame.ScrollingFrame.Bring Scrap.ShowButtons
+local function C_a()
+local script = G2L["a"];
+	local bringButton = script.Parent
+	
+	-- Pathing
+	local scrollingFrame = bringButton.Parent
+	local mainFrame = scrollingFrame.Parent 
+	local voidlingGui = mainFrame.Parent
+	
+	-- Access UI Elements
+	local voidlingMainFrame = voidlingGui:WaitForChild("VoidlingMainFrame")
+	local textToHide = voidlingMainFrame:WaitForChild("Info")
+	local textToshow = voidlingMainFrame:WaitForChild("Bring Type of Scrap")
+	
+	-- Reference buttons
+	local bringFuelButton = mainFrame:WaitForChild("Bring Fuel")
+	local bringCoalButton = mainFrame:WaitForChild("Bring Coal")
+	local newButton1 = mainFrame:WaitForChild("Bring All Scraps") 
+	
+	bringButton.MouseButton1Click:Connect(function()
+		-- Check if the "All Scraps" button is currently hidden
+		if newButton1.Visible == false then
+	
+			-- 1. SHOW the New Button and its Text
+			newButton1.Visible = true
+			textToshow.Visible = true
+	
+			-- 2. HIDE Coal and Fuel buttons (Ensuring they are gone)
+			bringFuelButton.Visible = false
+			bringCoalButton.Visible = false
+	
+			-- 3. HIDE original Info text
+			textToHide.Visible = false
+	
+		else
+			-- 4. If the button was ALREADY visible, hide it on the next click
+			newButton1.Visible = false
+			textToshow.Visible = false
+	
+			-- Optional: Bring back original info if everything is hidden
+			textToHide.Visible = true
+		end
+	end)
+end;
+task.spawn(C_a);
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Fuel.BringScript
+local function C_10()
+local script = G2L["10"];
+	-- Get references to the button and player
+	local button = script.Parent 
+	local player = game.Players.LocalPlayer
+	
+	-- Function to handle the button click
+	local function onButtonClicked()
+		-- 1. Safety Check: Make sure the player character and root part exist
+		local character = player.Character
+		if not character or not character:FindFirstChild("HumanoidRootPart") then
+			warn("Character or HumanoidRootPart not found.")
+			return 
+		end
+	
+		local rootPart = character.HumanoidRootPart
+		local targetPosition = rootPart.CFrame + Vector3.new(0, 5, 0) -- 5 studs above player
+	
+		local fuelParts = {}
+	
+		-- 2. Search the workspace for objects named "Fuel"
+		for _, item in pairs(workspace:GetDescendants()) do
+			if item.Name == "Fuel" then
+				table.insert(fuelParts, item)
+			end
+		end
+	
+		-- 3. Move the parts if found
+		if #fuelParts > 0 then
+			for _, fuel in pairs(fuelParts) do
+				if fuel:IsA("Model") then
+					-- PivotTo works even if the model has no PrimaryPart set
+					fuel:PivotTo(targetPosition)
+				elseif fuel:IsA("BasePart") then
+					-- Move single parts
+					fuel.CFrame = targetPosition
+				end
+			end
+	
+			-- Success Notification
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "Fuel Moved",
+				Text = "Moved " .. #fuelParts .. " Fuel part(s) to your location!",
+				Duration = 5
+			})
+			print("Success: Moved " .. #fuelParts .. " fuel parts.")
+		else
+			-- Failure Notification
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "No Fuel Found",
+				Text = "No Fuel parts were found in the workspace.",
+				Duration = 5
+			})
+			print("Wait: No Fuel items found in workspace.")
+		end
+	end
+	
+	-- Connect the button click
+	button.MouseButton1Click:Connect(onButtonClicked)
+end;
+task.spawn(C_10);
+-- StarterGui.VodlingGui.VoidlingMainFrame.LocalScript
+local function C_11()
+local script = G2L["11"];
+	local UserInputService = game:GetService("UserInputService")
+	
+	local gui = script.Parent
+	
+	local dragging
+	local dragInput
+	local dragStart
+	local startPos
+	
+	local function update(input)
+		local delta = input.Position - dragStart
+		-- Updates the position based on the delta (change) in mouse movement
+		gui.Position = UDim2.new(startPos.X.Scale, startPos.X.Offset + delta.X, startPos.Y.Scale, startPos.Y.Offset + delta.Y)
+	end
+	
+	gui.InputBegan:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseButton1 or input.UserInputType == Enum.UserInputType.Touch then
+			dragging = true
+			dragStart = input.Position
+			startPos = gui.Position
+	
+			-- Observe changes to the input (mouse moving)
+			input.Changed:Connect(function()
+				if input.UserInputState == Enum.UserInputState.End then
+					dragging = false
+				end
+			end)
+		end
+	end)
+	
+	gui.InputChanged:Connect(function(input)
+		if input.UserInputType == Enum.UserInputType.MouseMovement or input.UserInputType == Enum.UserInputType.Touch then
+			dragInput = input
+		end
+	end)
+	
+	UserInputService.InputChanged:Connect(function(input)
+		if input == dragInput and dragging then
+			update(input)
+		end
+	end)
+end;
+task.spawn(C_11);
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring Coal.BringScript
+local function C_14()
+local script = G2L["14"];
+	-- Get references to the button and player
+	local button = script.Parent 
+	local player = game.Players.LocalPlayer
+	
+	-- Function to handle the button click
+	local function onButtonClicked()
+		-- Ensure the player's character exists
+		local character = player.Character
+		if not character or not character:FindFirstChild("HumanoidRootPart") then
+			return 
+		end
+	
+		local targetPos = character.HumanoidRootPart.CFrame + Vector3.new(0, 5, 0)
+		local coalParts = {}
+	
+		-- Search entire workspace for objects named "Coal"
+		for _, item in pairs(workspace:GetDescendants()) do
+			if item.Name == "Coal" then
+				table.insert(coalParts, item)
+			end
+		end
+	
+		-- If any "Coal" parts are found, bring them to the player
+		if #coalParts > 0 then
+			for _, coal in pairs(coalParts) do
+				if coal:IsA("Model") then
+					-- If it's a model, move it using PivotTo (modern version of SetPrimaryPartCFrame)
+					coal:PivotTo(targetPos)
+				elseif coal:IsA("BasePart") then
+					-- If it's a single part, move its CFrame
+					coal.CFrame = targetPos
+				end
+			end
+	
+			-- Notification
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "Coal Moved",
+				Text = "Moved " .. #coalParts .. " Coal part(s) to your location!",
+				Duration = 5
+			})
+		else
+			-- Notification if none found
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "No Coal Found",
+				Text = "No Coal parts were found in the workspace.",
+				Duration = 5
+			})
+		end
+	end
+	
+	-- Connect the button click
+	button.MouseButton1Click:Connect(onButtonClicked)
+	
+end;
+task.spawn(C_14);
+-- StarterGui.VodlingGui.VoidlingMainFrame.Bring All Scraps.BringScript
+local function C_19()
+local script = G2L["19"];
+	-- Get references to the button and player
+	local button = script.Parent 
+	local player = game.Players.LocalPlayer
+	
+	-- The list of item names to look for
+	local targetNames = {
+		"Bolt",
+		"Sheet Metal",
+		"Broken Fan",
+		"Old Radio",
+		"Broken Microwave",
+		"Tyre",
+		"Old Car Engine",
+		"Washing Machine",
+		"UFO Junk / Components",
+		"Metal Chair",
+		"Cultist Experiment / Prototype",
+		"UFO Scrap"
+	}
+	
+	-- Function to handle the button click
+	local function onButtonClicked()
+		-- 1. Safety Check
+		local character = player.Character
+		if not character or not character:FindFirstChild("HumanoidRootPart") then
+			warn("Character or HumanoidRootPart not found.")
+			return 
+		end
+	
+		local rootPart = character.HumanoidRootPart
+		-- Position items slightly in front and above the player
+		local targetPosition = rootPart.CFrame * CFrame.new(0, 5, -2) 
+	
+		local itemsFound = {}
+	
+		-- 2. Search the workspace for objects in the list
+		for _, item in pairs(workspace:GetDescendants()) do
+			-- Check if the item's name is in our targetNames list
+			if table.find(targetNames, item.Name) then
+				table.insert(itemsFound, item)
+			end
+		end
+	
+		-- 3. Move the parts if found
+		if #itemsFound > 0 then
+			for _, item in pairs(itemsFound) do
+				if item:IsA("Model") then
+					-- Move models using PivotTo
+					item:PivotTo(targetPosition)
+				elseif item:IsA("BasePart") then
+					-- Move single parts
+					item.CFrame = targetPosition
+				end
+			end
+	
+			-- Success Notification
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "Items Brought",
+				Text = "Successfully brought " .. #itemsFound .. " items to you!",
+				Duration = 5
+			})
+		else
+			-- Failure Notification
+			game:GetService("StarterGui"):SetCore("SendNotification", {
+				Title = "Items Not Found",
+				Text = "None of the scrap items were found in the workspace.",
+				Duration = 5
+			})
+		end
+	end
+	
+	-- Connect the button click
+	button.MouseButton1Click:Connect(onButtonClicked)
+end;
+task.spawn(C_19);
